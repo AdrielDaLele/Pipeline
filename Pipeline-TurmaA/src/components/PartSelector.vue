@@ -32,8 +32,8 @@
 </script>
 
 <template>
-    <div :class="`part ${props.position}`">
-        <img :src="BASE_URL + props.parts[selectedIndex]?.src" alt="robot part">        
+    <div v-if="props.parts.length > 0" :class="`part ${props.position}`">
+        <img class="part-images" :id="`${props.position}-part-image`" :src="BASE_URL + props.parts[selectedIndex]?.src" alt="robot part">        
         <button  @click="changePart(false)" class="prev-selector"></button>
         <button  @click="changePart(true)" class="next-selector" ></button>
     </div>

@@ -6,7 +6,7 @@ const cart = useCart();
 </script>
 
 <template>
-    <div>
+    <div id ="cart-page">
         <h1>Cart Page!</h1>
         <table>
             <thead>

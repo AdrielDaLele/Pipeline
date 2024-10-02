@@ -52,7 +52,7 @@ const addCart = ()=> {
 </script>
 
 <template>
-    <div>
+    <div id ="build-page">
         <h1 class="text-center mb-2">{{ $t('BUILD.TITLE') }}</h1>        
         <section class="top-row">
           <PartSelector
